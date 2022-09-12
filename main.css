@@ -4,34 +4,66 @@
     padding: 0;
 }
 body {
-    background-image: url(./img/bg.jfif);
+    
 }
-@keyframes start {
+@keyframes appear {
     from {
-        display: block;
+        opacity: 0;
     }
     to{
-        display: none;
+        opacity: 1;
     }
 }
 .wrapper__title__hello {
-    position: relative ;
-    margin: 200px 300px;
-    animation-name: start;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    /* margin: 200px 300px; */
+    padding: 200px 300px;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    background-color: #e1dfec ;
+    background-image: linear-gradient(to bottom right, #e1dfec, #a62e6e);
+    background-size:cover ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
 }
 .title__hello {
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: 'Ms Madi', cursive;
-    font-weight: 700;
-    position: absolute;
-    max-width: 800px;
+    font-weight: 500;
 }
-.wrapper__title__hello img {
-    position: absolute;
-    right: 0;
-    max-width: 300px;
+.my__CV {
+    padding: 200px 300px;
+}
+.wrapper__top {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper__avt img {
     border-radius: 50%;
+    height: 300px;
 }
-
+.introduce__item {
+    max-width: 400px;
+    margin: 10px 0;
+    list-style: none;
+}
+.fa-brands {
+    font-size: 3rem;
+}
+li.wrapper__button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.fa-facebook{
+    color: #0c85ee;
+}
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;      
+  -webkit-text-fill-color: transparent;
+}
+.fa-github{
+    color: #000;
+}
