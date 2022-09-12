@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    height: 80px;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+    padding: 0 50px;
+    margin: 0;
+    /* line-height: 80px; */
+}
+.navbar__name p{
+    margin: 0 10px;
+}
+.navbar__name {
+    display: flex;
+    line-height: 80px;
+}
+.navbar__title {
+    line-height: 80px;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+.fa-circle{
+    line-height: 80px;
+    margin: 0 10px;
+}   
+.navbar__menu {
+    display: flex;
+    margin-bottom: 0;
+}
+.menu__item {
+    list-style: none;
+    margin: 0 20px;
+}
+.menu__item a {
+    font-weight: 400 ;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+.menu__item a:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
