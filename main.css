@@ -115,6 +115,7 @@
     right: 0;
     transform: translateX(-100%);
     opacity: 0;
+    box-shadow: 3px 3px #0951a464;
 }
 .wrapper-icon:hover::before {
     opacity: 1;
