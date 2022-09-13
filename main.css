@@ -51,7 +51,7 @@
     opacity: 0;
     transform: translateY(-25%);
     z-index: -1;
-    border-radius: 50%;
+    border-radius: 100% 50% 100% 50%;
 }
 .list-item a:hover::before{
     transform: translateY(0);
@@ -94,4 +94,62 @@
     align-items: center;
     font-size: 3.5rem;
     color: #fff;
+}
+.contact {
+    flex-direction: column;
+}
+.wrapper-icon {
+    font-size: 125px;
+    padding: 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-icon::before  {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.wrapper-icon:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: -1;
+    transition: 1s ease-in-out;
+    border-radius: 40px;
+}
+.facebook::before {
+    background-color: #046ee5;
+}
+.facebook:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.facebook:hover i {
+    color: #fff;
+}
+.fa-brands,.fa-solid {
+    margin: 5px 20px;
+}
+.fa-facebook {
+    color: #046ee5;
+}
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-envelope {
+    color: #fff;
+    background-color: #000;
+}
+.fa-phone {
+    color: #2bf72b;
 }
