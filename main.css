@@ -42,7 +42,7 @@ nav {
     z-index: 1;
 }
 
-.list-item a::before , {
+.list-item a::before {
     content: "";
     background-color: rgb(226, 104, 104) ;
     height: 100%;
