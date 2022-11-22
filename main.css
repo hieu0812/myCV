@@ -19,7 +19,7 @@ body {
     background-image: linear-gradient(rgb(216, 217, 207),rgb(237, 237, 237));
     font-weight: 500;
 }
-.menu-list {
+.footer, .menu-list {
     font-family: 'Dosis', sans-serif;
     display: flex;
     justify-content: space-around;
@@ -42,7 +42,7 @@ nav {
     z-index: 1;
 }
 
-.list-item a::before {
+.list-item a::before , {
     content: "";
     background-color: rgb(226, 104, 104) ;
     height: 100%;
@@ -67,7 +67,12 @@ nav {
     /* padding: 70px 70px; */
     font-family: 'Josefin Sans', sans-serif;
 }
-.project {
+.word {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.wrapper-CV {
     background-color: #FF8787;
     padding: 80px 60px;
 }
@@ -77,23 +82,90 @@ nav {
     margin-bottom: 80px;
 }
 .row {
-    justify-content: space-around;
-}
-.row img {
-    /* width: calc(100% - 80px); */
-    width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+img.avt {
+    width: 30%;
+    border-radius: 50%;
+}
+.CV {
+    display: flex;
+    justify-self: space-between;
+}
+.information {
+    display: flex;
+    justify-content: space-between;
     margin: auto;
-    padding: auto;
-    height: 100%;
-    padding: 40px 40px;
-    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
 }
-.row img:hover {
-    cursor: pointer;
-    background-color: #D8D9CF;
+.CV li {
+    list-style: none;
 }
-.project-describe {
+.wrapper-contact {
+    padding: 80px 60px;
+    background-color: rgb(237, 237, 237);
+}
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.wrapper-icon {
+    display: flex;
     width: 100%;
-    height: 100%;
+    justify-content: space-between;
+}
+.fa-brands, .fa-solid {
+    font-size: 50px;
+
+}
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-phone {
+    color: #27c018;
+}
+.fa-tiktok ,.fa-github {
+    color:#000;
+}
+
+@media (max-width:1020px) {
+    .CV {
+        display: grid;
+    }
+    img.avt {
+        display: block;
+        margin: auto;
+        padding: auto;
+        margin-bottom: 30px;
+    }
+    .information {
+        font-size: 16px;
+    }
+}
+@media (max-width:600px) {
+    .fa-brands, .fa-solid {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .wrapper-icon {
+        display: grid;
+        justify-content: center;
+    }
+}
+@media (max-width:540px) {
+    .information {
+        font-size: 15px;
+    } 
+    .list-item {
+        font-size: 30px;
+    }
+}
+.footer {
+    background-color:rgb(255, 135, 135) ;
+    padding: 80px 60px;
 }
